@@ -1,67 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This will show on Google result page as description">
-    <title>Nuno Webpage</title>
-</head>
-<body>
-</body>
-    <!-- header - start -->
-    <header style="border: 1px solid red;">
-        logo
-        the menu goes here
-    </header>
- <!-- header - end -->
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This will show on Google result page as description">
+        <title>Nuno Webpage</title>
+        <!-- CSS - start -->
+        <link rel="stylesheet" href="css/style.css">
+        <style type="text/css">
+            header {
+                background-color: aquamarine;
+            }
+        </style>
+        <!-- CSS - end -->
+    
+        <!-- Google Fonts Welcome to my code -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Krona+One&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
 
-    <!-- hero - start-->
-    <div style="border: 1px solid yellow">
-        heading 1
-        paragraph
-        button
-    </div>
+    </head>
+
+<body>
+    <!-- header - start here -->
+    <header style="border: 1px solid red;">
+        <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <!-- header - end -->
+
+    <!-- hero - start -->
+    <section id="hero">
+        <h1>heading 1</h1>
+        <p>paragraph <strong>Hello</strong></p>
+        <button>This is the CTA</button>
+    </section>
     <!-- hero - end -->
 
-    <!-- Blog articles - start -->
-    <div>
-        <article>article 1</article>
-        <article>article 2</article>
-        <article>article 3</article>
-    </div>
-    <!-- Blog articles - end -->
+<!-- Blog starts  -->
+    <section> 
+        <article class="home-article">
+            <img src="img/brooke-lark-fANEvguCIXE-unsplash.jpg" class="img-article">
+            <h3>Title - Article 1</h3>
+            <p>description</p> 
+            <div>
+                <img src="img/avatar_01.png" alt="Photo of Author Nuno">
+                <p>author name</p> 
+            </div>
+        </article> 
+        <article class="home-article">
+            <img src="img/clay-banks-_wkd7XBRfU4-unsplash.jpg" class="img-article">>
+            <h3>Title - article 2</h3>
+            <p>description</p> 
+            <div>
+                <img src="img/avatar_02.png" alt="Photo of Nuno">
+                <p>Author name</p> 
+            </div>
+        </article>
+        <article class="home-article">
+            <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" class="img-article">
+                <h3>Title - article 3</h3>
+                <p>Description</p> 
+            <div>
+                <img src="img/avatar_03.png" alt="Photo of Avatar">
+                <p>Author name</p> 
+            </div>
+        </article>
+    </section>
+<!-- blog ends  -->
 
-    <!-- features - start -->
+<!-- feature starts -->
+<section>
+    <!-- feature 1 starts  -->
     <div>
-        Feature 1
-        Feature 2
-        Feature 3
-        Feature 4
+        <span>
+            <i class="fas fa-air-freshener"></i>
+        </span>
+        <div>
+            <h4>Super Fresh</h4> 
+            <p>Feat description</p>
+        </div>
     </div>
-    <!-- features - end -->
-    
-    <!-- contact - start -->
+  <!-- feature 1 ends  -->
+
+  <!-- feature 2 ends  -->
     <div>
-        Contact (Title - Heading 3)
-        Form name
-        Form Email
-        Form Message
+        <span>
+            <i class="fas fa-atom"></i>
+        </span>
+        <div>
+            <h4>Feature 2</h4> 
+            <p>Feat description</p>
     </div>
-    <!-- contact - end -->
+<!-- feature 2 ends  -->
 
-    <!-- footer - start -->
-    <footer>
-        About
-        features
-        Contact Us
+<!-- feature 3 starts  -->
+    <div>
+        <span>
+        <i class="fas fa-fish"></i>
+        </span>
+        <div>
+            <h4>Feature 3</h4> 
+            <p>Feat description</p>
+        </div>
+    </div>
+<!-- feature 3 ends  -->
+<!-- feature 4 starts  -->
+        <div>
+            <span>
+            <i class="fas fa-peace"></i>
+            </span>
+            <div>
+                <h4>Feature 4</h4> 
+                <p>Feat description</p>
+            </div>
+        </div>
+<!-- feature 3 ends  -->
+</section>
+<!-- feature ends -->
+<!-- contact  -->
+ <section>
+    <h3>Contact (title - heading 3)</h3>
+    <div>
+        <form action="#">   
+            <input type="text"> Form name<br><br>
+            <input type="email"> Email <br><br>
+            <textarea rows="5" cold="50">Write your message</textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>    
+ </section>
+<!-- contact end  -->
 
-        Social Media
-        Instagram
-        Facebook
-        Twitter
-    </footer>
-    <!-- footer - end -->
+<!-- Footer starts  -->
+<footer>
+    <div>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="mailto:nunomoreira9@hotmail.com">Email</a>
+        <a href="tel:+4917688290698">Phone</a>
+    </div>
+
+    <div>
+        <h5>Follow us</h5>
+        <a href="https://www.instagram.com/nunofmoreira" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/nunofmoreira"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.twitter.com/nunofmoreira"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.medium.com/nunofmoreira"><i class="fab fa-medium fa-2x"></i></a>
+        <a href="https://www.behance.com/nunofmoreira"><i class="fab fa-behance fa-2x"></i></a>
+    </div>
+
+</footer>
+<!-- Footer ends  -->
+
+
+
+
 
 </body>
 </html>
