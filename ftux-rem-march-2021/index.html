@@ -27,18 +27,19 @@
 
 <body>
     <!-- header - start here -->
-    <header style="border: 1px solid red;">
+    <header class="container">
         <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
         <nav>
             <a href="#">About</a>
             <a href="#">Features</a>
             <a href="#">Contact</a>
+            <a href="#" class="button-link">Download CV</a>
         </nav>
     </header>
     <!-- header - end -->
 
     <!-- hero - start -->
-    <section id="hero">
+    <section id="hero" class="container">
         <h1>heading 1</h1>
         <p>paragraph <strong>Hello</strong></p>
         <button>This is the CTA</button>
@@ -46,22 +47,22 @@
     <!-- hero - end -->
 
 <!-- Blog starts  -->
-    <section> 
+    <section id="articles" class="container"> 
         <article class="home-article">
             <img src="img/brooke-lark-fANEvguCIXE-unsplash.jpg" class="img-article">
             <h3>Title - Article 1</h3>
             <p>description</p> 
-            <div>
-                <img src="img/avatar_01.png" alt="Photo of Author Nuno">
-                <p>author name</p> 
+            <div class="container author-container">
+                <img src="img/avatar_01.png" alt="Photo of Author Nuno" class="author-image">
+                <p>Author Name</p> 
             </div>
         </article> 
         <article class="home-article">
             <img src="img/clay-banks-_wkd7XBRfU4-unsplash.jpg" class="img-article">>
             <h3>Title - article 2</h3>
             <p>description</p> 
-            <div>
-                <img src="img/avatar_02.png" alt="Photo of Nuno">
+            <div class="container author-container">
+                <img src="img/avatar_02.png" alt="Photo of Nuno" class="author-image">
                 <p>Author name</p> 
             </div>
         </article>
@@ -69,8 +70,8 @@
             <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" class="img-article">
                 <h3>Title - article 3</h3>
                 <p>Description</p> 
-            <div>
-                <img src="img/avatar_03.png" alt="Photo of Avatar">
+            <div class="container author-container">
+                <img src="img/avatar_03.png" alt="Photo of Avatar" class="author-image">
                 <p>Author name</p> 
             </div>
         </article>
@@ -78,84 +79,111 @@
 <!-- blog ends  -->
 
 <!-- feature starts -->
-<section>
-    <!-- feature 1 starts  -->
-    <div>
-        <span>
+<section id="features" class="container">
+       <!-- feature 1 - start -->
+   <div class="container feature-card">
+        <span class="icon-feature">
             <i class="fas fa-air-freshener"></i>
         </span>
-        <div>
-            <h4>Super Fresh</h4> 
-            <p>Feat description</p>
+    <div>
+        <h4>Super Fresh</h4>
+        <p>Feat Description</p>
+    </div>
+    </div>
+    <!-- feature 1 - end -->
+
+  <!-- feature 2 - start -->
+  <div class="container feature-card">
+    <span class="icon-feature">
+        <i class="fas fa-atom"></i>
+    </span>
+    <div>
+         <h4>Atomic Design</h4>
+        <p>Feat Description</p>
         </div>
     </div>
-  <!-- feature 1 ends  -->
+<!-- feature 2 - end -->
 
-  <!-- feature 2 ends  -->
-    <div>
-        <span>
-            <i class="fas fa-atom"></i>
-        </span>
-        <div>
-            <h4>Feature 2</h4> 
-            <p>Feat description</p>
-    </div>
-<!-- feature 2 ends  -->
-
-<!-- feature 3 starts  -->
-    <div>
-        <span>
+    <!-- feature 3 - start -->
+    <div class="container feature-card">
+    <span class="icon-feature">
         <i class="fas fa-fish"></i>
-        </span>
-        <div>
-            <h4>Feature 3</h4> 
-            <p>Feat description</p>
-        </div>
+    </span>
+    <div>
+        <h4>Fish</h4>
+        <p>Feat Description</p>
     </div>
-<!-- feature 3 ends  -->
-<!-- feature 4 starts  -->
-        <div>
-            <span>
-            <i class="fas fa-peace"></i>
-            </span>
-            <div>
-                <h4>Feature 4</h4> 
-                <p>Feat description</p>
-            </div>
-        </div>
-<!-- feature 3 ends  -->
+    </div>
+<!-- feature 3 - end -->
+
+<!-- feature 4 - start -->
+    <div class="container feature-card">
+    <span class="icon-feature">
+        <i class="fas fa-peace"></i>
+    </span>
+    <div>
+        <h4>Peace & Love</h4>
+        <p>Feat Description</p>
+    </div>
+    </div>
+<!-- feature 4 - end -->
 </section>
 <!-- feature ends -->
-<!-- contact  -->
- <section>
-    <h3>Contact (title - heading 3)</h3>
-    <div>
+
+<!-- contact start  -->
+ <section id="contact" class="container">
+     <div class="contact-30">
+        <h3>Contact</h3>
+     </div>
+    <div class="contact-70">
         <form action="#">   
-            <input type="text"> Form name<br><br>
-            <input type="email"> Email <br><br>
-            <textarea rows="5" cold="50">Write your message</textarea><br><br>
-            <input type="submit" value="Send Message">
+                <label for="name">Name</label><br>
+                <input id="name" type="text" placeholder="John Snow">
+                
+                <br><br>
+
+                <label for="message">Write your message</label><br>
+                <textarea id="message" rows="5" cols="50" placeholder="Write something nice"></textarea><br><br>
+
+                <br><br>
+                
+                <input type="checkbox" id="terms" checked>
+                <label for="terms">I accept all the terms</label>
+
+                <!-- <br><br>
+
+                <input type="date">
+
+                <br><br>
+
+                <input type="password">
+
+                <br><br>
+
+                <input type="file"> -->
+
+                
         </form>
     </div>    
  </section>
 <!-- contact end  -->
 
 <!-- Footer starts  -->
-<footer>
+<footer class="container">
     <div>
-        <a href="#">About</a>
-        <a href="#">Features</a>
-        <a href="mailto:nunomoreira9@hotmail.com">Email</a>
+        <a href="#">About</a><br>
+        <a href="#">Features</a><br>
+        <a href="mailto:nunomoreira9@hotmail.com">Email</a><br>
         <a href="tel:+4917688290698">Phone</a>
     </div>
 
     <div>
         <h5>Follow us</h5>
-        <a href="https://www.instagram.com/nunofmoreira" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/nunofmoreira"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="https://www.twitter.com/nunofmoreira"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="https://www.medium.com/nunofmoreira"><i class="fab fa-medium fa-2x"></i></a>
-        <a href="https://www.behance.com/nunofmoreira"><i class="fab fa-behance fa-2x"></i></a>
+        <a href="https://www.instagram.com/nunofmoreira" target="_blank"><span class="icon-social"><i class="fab fa-instagram fa-2x"></i></span></a>
+        <a href="https://www.facebook.com/nunofmoreira"><span class="icon-social"><i class="fab fa-facebook fa-2x"></i></span></a>
+        <a href="https://www.twitter.com/nunofmoreira"><span class="icon-social"><i class="fab fa-twitter fa-2x"></i></span></a>
+        <a href="https://www.medium.com/nunofmoreira"><span class="icon-social"><i class="fab fa-medium-m fa-2x"></i></span></a>
+        <a href="https://www.behance.com/nunofmoreira"><span class="icon-social"><i class="fab fa-behance fa-2x"></i></span></a>
     </div>
 
 </footer>

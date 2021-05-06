@@ -50,19 +50,40 @@ section {
     /* background-color: green; */
 }
 
+header {
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer {
     height: 350px;
     background-color: honeydew;
+    justify-content: space-between;
+    padding: 30px 60px;
 }
 
 
+header nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
 /* THIS IS A CLASS */
+.button-link {
+    background-color: orangered;
+    color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 1px rgb(0 0 0 / 8%);
+}
+
 .home-article {
     /*border: 10px solid whitesmoke; */
     border-radius: 16px;
     background-color: whitesmoke;
     width: 200px;
     padding: 20px;
+    margin: 20px;
 }
 
 .img-article {
@@ -72,26 +93,70 @@ footer {
 .icon-feature {
     font-size: 4em;
     color: darkgreen;
+    margin: 10px;
 }
 
+.icon-social {
+    margin: 10px;
+}
+
+.container {
+    display: flex
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.author-container {
+    align-items: center;
+}
+
+.feature-card {
+    padding: 10px;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.contact-30 {
+    width: 30%;
+}
+
+.contact-70 {
+    width: 70%;
+}
+
+.fab {
+    margin: 20px;
+}
 /* THIS IS AN ID */
 #hero {
     /* background-color: tomato; */
-    background-image: url('../img/steve-harvey-U4wcrDteZ2Y-unsplash.jpg');
+    background-image: url('../img/nathan-dumlao-zUNs99PGDg0-unsplash.jpg');
     background-size: cover;
     text-align: center;
-    /*height: 500px; */
+    /* height: 500px; */
     height: 60vh;
+    /* flex settings */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.something {
 
+#articles {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#something {
-
+#features {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-article {
+#contact {
+    padding: 30px;
 
 }
