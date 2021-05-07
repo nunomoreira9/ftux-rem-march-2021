@@ -69,12 +69,40 @@ header nav a {
     text-decoration: none;
 }
 
+/* LINKS */
+a:link, a:visited {
+    color: slategray;
+}
+
+a:hover {
+    background-color: wheat;
+}
+
+a:active {
+    color: slateblue;
+}
+
+/* MENU LINKS */
+a.menu:link, a.menu:visited {
+    color: purple;
+}
+
+a.menu:hover {
+    color: sienna;
+}
+
+
+
 /* THIS IS A CLASS */
-.button-link {
+a.button-link:link, a.button-link:visited {
     background-color: orangered;
     color: whitesmoke;
     border-radius: 8px;
     box-shadow: 0px 1px 4px 1px rgb(0 0 0 / 8%);
+}
+
+a.button-link:hover {
+    background-color: purple;
 }
 
 .home-article {
@@ -160,3 +188,33 @@ header nav a {
     padding: 30px;
 
 }
+
+/* ------------------------------- */
+/* TABLET */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    h1 {
+       background-color: blue; 
+       font-size: 4.653rem;
+    }
+    /* header {
+        background-color: sandybrown;
+    } */
+
+}
+
+
+/* ------------------------------- */
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+    h1 {
+        background-color: darkmagenta;
+        font-size: 5.653rem;
+    }
+
+    header {
+        background-color: royalblue;
+    }
+
+}
+
+
